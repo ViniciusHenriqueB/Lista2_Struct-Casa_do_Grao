@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Cores */
+    --marrom_escuro: #250d08; 
+    --creme: #D9CCC5; 
+    --caramelo: #D99B66; 
+    --opcional1-creme_escuro: #BFA995; 
+    --opcional2-marrom_claro: #593825; 
+
+    /* Fontes  */
+    --fonte_padrao: "Roboto Condensed", sans-serif;
+    --fonte_titulos: "Berkshire Swash", serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--caramelo);
+    color: white;
+    font-family: var(--fonte_padrao);
+}
+
+header {
+    background-color: var(--marrom_escuro);
+    padding: 20px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.422);
+}
+
+#logo {
+    font-family: var(--fonte_titulos);
+    font-size: 1.7em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#menu a:hover {
+    background-color: var(--caramelo);
+    transition: 0.5s all;
+}
+
+h1 {
+    font-family: var(--fonte_titulos);
+}
+
+section {
+    padding-top: 44vh;
+    padding-bottom: 44vh;
+}
+
+#imagem_parallax {
+    text-align: center;
+    text-shadow: 2px 1px 7px rgba(0, 0, 0, 0.503);
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    background-image: url(images/cafe1-parallax.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+footer {
+    background-color: var(--marrom_escuro);
+    color: var(white);
+}
+
+footer > h1 {
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.270);
+    font-family: var(--fonte_padrao);
+    font-size: 2em;
+    font-weight: 500;
+    min-width: 300px;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 30px 0px 0px 0px;
+    border-bottom: 3px solid white
+}
+
+footer > ul {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    min-width: 300px;
+    width: 100%;
+    justify-content: center;
+}
+
+
+footer li {
+    list-style: none;
+}
+
+a img {
+    height: 30px;
+    width: 30px;
+}
