@@ -83,19 +83,52 @@ section {
     background-image: url(images/cafe1-parallax.jpg);
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.468);
+}
+
+#cardapio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 20vh 2rem;
+}
+
+#cardapio img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cafe {
+    text-align: center;
+}
+
+.cafe img:hover {
+    transform: scale(1.01);
+    transition: 0.5s all;
+}
+
+.descricao {
+    text-shadow:  2px 2px 7px rgba(0, 0, 0, 0.503);    
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 5px;
 }
 
 
 footer {
     background-color: var(--marrom_escuro);
     color: var(white);
+    box-shadow: 2px -1px 7px rgba(0, 0, 0, 0.51);
 }
 
 footer > h1 {
     text-align: center;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.270);
     font-family: var(--fonte_padrao);
-    font-size: 2em;
+    font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
     font-weight: 500;
     min-width: 300px;
     max-width: 700px;
