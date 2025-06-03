@@ -33,6 +33,11 @@ header {
     background-color: var(--marrom_escuro);
     padding: 20px;
     box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.422);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 #logo {
