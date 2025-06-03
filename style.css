@@ -98,6 +98,7 @@ section {
     font-size: clamp(1.5rem, 5vw, 3rem);
     background-image: url(images/cafe1-parallax.jpg);
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.468);
 }
