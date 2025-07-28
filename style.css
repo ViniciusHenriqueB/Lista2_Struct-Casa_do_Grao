@@ -171,6 +171,11 @@ footer li {
 }
 
 .rede_social_logo {
+    color: white;
     height: 30px;
     width: 30px;
+}
+
+.rede_social_logo:hover {
+    color: var(--caramelo);
 }
